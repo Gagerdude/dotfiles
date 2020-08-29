@@ -1,3 +1,4 @@
 # ls alias
+alias ls="ls -G"
 alias la="ls -A"
 alias ll="ls -alF"
