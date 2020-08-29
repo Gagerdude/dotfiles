@@ -1,2 +1,14 @@
 {
+    // Shell Settings
+    "terminal.integrated.shell.osx": "zsh",
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
+
+    // File Save Settings
+    "files.eol": "\n",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+
+    // SCM Settings
+    "git.autofetch": true
 }
