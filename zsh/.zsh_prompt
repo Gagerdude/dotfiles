@@ -1,0 +1,15 @@
+BASE_PROMPT='%F{green}%n@%m%f:%F{blue}%~%f'
+SINGLE_LINE_PROMPT="${BASE_PROMPT}$ "
+MULTI_LINE_PROMPT="┌[${BASE_PROMPT}]
+└$ "
+
+function precmd {
+    PROMPT_LEN=$(print -Pn $BASE_PROMPT | wc -m | xargs)
+    ((FREE_SPACE = $COLUMNS - $PROMPT_LEN))
+
+    if (($FREE_SPACE < 20)); then
+        PROMPT=$MULTI_LINE_PROMPT
+    else
+        PROMPT=$SINGLE_LINE_PROMPT
+    fi
+}
