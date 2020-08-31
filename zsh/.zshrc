@@ -3,3 +3,5 @@
 
 # custom prompt
 . ~/.zsh_prompt
+
+setopt HIST_IGNORE_DUPS
