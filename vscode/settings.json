@@ -10,5 +10,12 @@
     "files.trimTrailingWhitespace": true,
 
     // SCM Settings
-    "git.autofetch": true
+    "git.autofetch": true,
+
+    // Language Specific Settings
+    "[ruby]": {
+        "editor.rulers": [
+            100, 120
+        ]
+    }
 }
