@@ -14,8 +14,16 @@
 
     // Language Specific Settings
     "[ruby]": {
+        "editor.tabSize": 2,
         "editor.rulers": [
             100, 120
+        ]
+    },
+
+    "[javascriptreact]": {
+        "editor.tabSize": 2,
+        "editor.rulers": [
+            120
         ]
     }
 }
